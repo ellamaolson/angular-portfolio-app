@@ -1,1 +1,199 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  font-family: 'Roboto', "Helvetica Neue", sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet+* {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h3 {
+  padding-right: 10px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #f8de7e;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 16px;
+  border: 1px solid #bdbdbd;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Unordered List */
+
+ul {
+  padding-inline-start: 30px;
+  padding-inline-end: 10px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+}
+
+/* Button */
+
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f8de7e;
+  color: #364547;
+  border: none;
+}
+
+.button:hover,
+button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Components */
+
+app-top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: #009e9e;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-home {
+  width: var(--content-width);
+  min-height: fit-content;
+  position: relative;
+  max-width: 1000px;
+  margin: 2% auto 0;
+}
+
+/* app-bottom-bar {
+  width: 100%;
+  background-color: #009e9e;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+} */
+
+/* app-bottom-bar a {
+  display: flex;
+  align-items: center;
+} */
+
+/* custom ids and classes */
+
+#site-title {
+  font-size: 28px;
+  font-weight: lighter;
+  color: #fafafa;
+  margin: 0;
+  text-align: left;
+}
+
+.center-page-img {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Layout */
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  background-color: #009e9e;
+}
+
+.d-flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
