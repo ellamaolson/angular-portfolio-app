@@ -19,11 +19,6 @@ body {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
 router-outlet+* {
   padding: 0 16px;
 }
@@ -153,7 +148,49 @@ app-home {
   align-items: center;
 } */
 
-/* custom ids and classes */
+
+/* GRID LAYOUT */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+
+/* Custom classes and ids*/
 
 #site-title {
   font-size: 28px;
@@ -172,7 +209,6 @@ app-home {
   margin-right: auto;
 }
 
-/* Layout */
 footer {
   margin-top: 8px;
   display: flex;
@@ -181,19 +217,12 @@ footer {
   background-color: #009e9e;
 }
 
-.d-flex {
-  display: flex;
-}
-.row {
-  flex-direction: row;
+.little-padding {
+  padding: 10px;
 }
 
-.justify-content-center {
-  justify-content: center;
+.little-margin {
+  margin: 10px;
 }
 
-.align-items-center {
-  align-items: center;
-}
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
