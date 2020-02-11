@@ -11,13 +11,15 @@ import { HomeComponent } from './home/home.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PublicationsComponent } from './publications/publications.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TopBarComponent,
-    BottomBarComponent
+    BottomBarComponent,
+    PublicationsComponent
   ],
   imports: [
     BrowserModule,
