@@ -114,6 +114,10 @@ button:disabled {
   cursor: auto;
 }
 
+app-bottom-bar button {
+  background-color: #009e9e;
+}
+
 /* Components */
 
 app-top-bar {
@@ -190,6 +194,10 @@ app-home {
   align-items: center;
 }
 
+.center-item {
+  margin: 2% auto;
+}
+
 
 /* Custom classes and ids*/
 
@@ -224,6 +232,11 @@ footer {
 
 .little-margin {
   margin: 10px;
+}
+
+.scroll-card {
+  max-height: 450px;
+  overflow-y: auto;
 }
 
 
