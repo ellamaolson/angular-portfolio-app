@@ -1,12 +1,14 @@
 <a [routerLink]="['/']">
-    <h1 id="site-title">Elana Olson</h1>
+  <h1 id="site-title">Elana Olson</h1>
+</a>
+
+<mat-menu #appMenu="matMenu">
+  <a [routerLink]="['/']">
+    <button mat-menu-item>Home</button>
   </a>
-  
-  <mat-menu #appMenu="matMenu">
-      <a [routerLink]="['/']">
-        <button mat-menu-item>Home</button>
-      </a>
-  </mat-menu>
-  
-  <button mat-icon-button [matMenuTriggerFor]="appMenu">+</button>
-  
+  <a [routerLink]="['publications']">
+    <button mat-menu-item>Publications</button>
+  </a>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">+</button>

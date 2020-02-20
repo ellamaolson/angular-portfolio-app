@@ -1,9 +1,9 @@
 /* Global Styles */
 
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 * {
-  font-family: 'Roboto', "Helvetica Neue", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   color: #616161;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 
-router-outlet+* {
+router-outlet + * {
   padding: 0 16px;
 }
 
@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Hyperlink */
@@ -50,6 +50,7 @@ a {
   cursor: pointer;
   color: #f8de7e;
   text-decoration: none;
+  font-size: 16px;
 }
 
 a:hover {
@@ -113,6 +114,10 @@ button:disabled {
   cursor: auto;
 }
 
+app-bottom-bar button {
+  background-color: #009e9e;
+}
+
 /* Components */
 
 app-top-bar {
@@ -147,7 +152,6 @@ app-home {
   display: flex;
   align-items: center;
 } */
-
 
 /* GRID LAYOUT */
 
@@ -189,6 +193,9 @@ app-home {
   align-items: center;
 }
 
+.center-item {
+  margin: 2% auto;
+}
 
 /* Custom classes and ids*/
 
@@ -225,4 +232,8 @@ footer {
   margin: 10px;
 }
 
-
+.scroll-card {
+  max-height: 450px;
+  max-width: 450px;
+  overflow-y: auto;
+}
